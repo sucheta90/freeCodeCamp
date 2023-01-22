@@ -1,0 +1,456 @@
+
+> @freecodecamp/freecodecamp@0.0.1 develop:server
+> npm run predevelop && cd ./api-server && npm run develop
+
+
+> @freecodecamp/freecodecamp@0.0.1 predevelop
+> npm-run-all create:*
+
+
+> @freecodecamp/freecodecamp@0.0.1 create:config
+> tsc -p config && npm run ensure-env && npm run download-trending
+
+
+> @freecodecamp/freecodecamp@0.0.1 ensure-env
+> cross-env DEBUG=fcc:* ts-node ./tools/scripts/build/ensure-env.ts
+
+
+> @freecodecamp/freecodecamp@0.0.1 download-trending
+> ts-node ./tools/scripts/build/download-trending.ts
+
+
+> @freecodecamp/freecodecamp@0.0.1 create:utils
+> tsc -p utils
+
+
+> @freecodecamp/api-server@0.0.1 develop
+> node src/development-start.js
+
+Debugger listening on ws://0.0.0.0:9229/2479865f-2759-455a-aa1d-ea66a149e027
+For help, see: https://nodejs.org/en/docs/inspector
+Sun, 22 Jan 2023 16:04:13 GMT fcc:server Sentry reporting disabled unless DSN is provided.
+Sun, 22 Jan 2023 16:04:13 GMT fcc:server:datasources using MailHog server on port 1025
+Sun, 22 Jan 2023 16:04:13 GMT fcc:models:user setting up user hooks
+(node:43335) [MONGODB DRIVER] Warning: Top-level use of w, wtimeout, j, and fsync is deprecated. Use writeConcern instead.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:43335) [MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Sun, 22 Jan 2023 16:04:14 GMT fcc:server freeCodeCamp server listening on port 3000 in development
+Sun, 22 Jan 2023 16:04:14 GMT fcc:server connecting to db at mongodb://localhost:27017/freecodecamp
+Sun, 22 Jan 2023 16:04:14 GMT fcc:boot:donate Donation disabled in development unless ALL test keys are provided
+Sun, 22 Jan 2023 16:04:14 GMT fcc:server db connected
+Sun, 22 Jan 2023 16:04:14 GMT fcc:boot:donate activeDonor count: 0
+Sun, 22 Jan 2023 16:06:39 GMT fcc:server 2023-01-22T16:06:39.898Z 302 GET 14.449 ms - /signin
+Sun, 22 Jan 2023 16:07:10 GMT fcc:server 2023-01-22T16:07:10.778Z 302 GET 81.612 ms - /signin
+Sun, 22 Jan 2023 16:07:20 GMT fcc:server 2023-01-22T16:07:20.960Z 302 GET 3.601 ms - /signin
+Sun, 22 Jan 2023 16:07:27 GMT fcc:server 2023-01-22T16:07:27.881Z 302 GET 4.138 ms - /signin
+Sun, 22 Jan 2023 16:07:35 GMT fcc:server 2023-01-22T16:07:35.488Z 302 GET 3.990 ms - /signin
+Sun, 22 Jan 2023 16:08:05 GMT fcc:server 2023-01-22T16:08:05.317Z 302 GET 3.018 ms - /signin
+Sun, 22 Jan 2023 16:08:25 GMT fcc:server 2023-01-22T16:08:25.282Z 302 GET 3.714 ms - /signin
+Sun, 22 Jan 2023 16:08:43 GMT fcc:server 2023-01-22T16:08:43.232Z 302 GET 4.083 ms - /signin
+Sun, 22 Jan 2023 16:09:13 GMT fcc:server 2023-01-22T16:09:13.581Z 302 GET 3.613 ms - /signin
+Sun, 22 Jan 2023 16:09:14 GMT fcc:boot:donate activeDonor count: 0
+Sun, 22 Jan 2023 16:09:31 GMT fcc:server 2023-01-22T16:09:31.588Z 302 GET 3.626 ms - /signin
+Sun, 22 Jan 2023 16:09:46 GMT fcc:server 2023-01-22T16:09:46.076Z 302 GET 80.302 ms - /signin
+Sun, 22 Jan 2023 16:10:00 GMT fcc:server 2023-01-22T16:10:00.082Z 302 GET 3.947 ms - /signin
+Sun, 22 Jan 2023 16:10:43 GMT fcc:server 2023-01-22T16:10:43.576Z 302 GET 71.257 ms - /signin
+Sun, 22 Jan 2023 16:11:14 GMT fcc:server 2023-01-22T16:11:14.689Z 302 GET 3.944 ms - /signin
+Sun, 22 Jan 2023 16:11:27 GMT fcc:server 2023-01-22T16:11:27.292Z 302 GET 2.461 ms - /signin
+Sun, 22 Jan 2023 16:11:40 GMT fcc:server 2023-01-22T16:11:40.793Z 302 GET 2.859 ms - /signin
+Sun, 22 Jan 2023 16:11:54 GMT fcc:server 2023-01-22T16:11:54.076Z 302 GET 81.798 ms - /signin
+Sun, 22 Jan 2023 16:12:30 GMT fcc:server 2023-01-22T16:12:30.356Z 302 GET 2.043 ms - /signin
+Sun, 22 Jan 2023 16:12:52 GMT fcc:server 2023-01-22T16:12:52.095Z 302 GET 2.420 ms - /signin
+Sun, 22 Jan 2023 16:13:19 GMT fcc:server 2023-01-22T16:13:19.878Z 302 GET 50.203 ms - /signin
+Sun, 22 Jan 2023 16:13:31 GMT fcc:server 2023-01-22T16:13:31.191Z 302 GET 1.795 ms - /signin
+Sun, 22 Jan 2023 16:13:44 GMT fcc:server 2023-01-22T16:13:44.609Z 302 GET 2.510 ms - /signin
+Sun, 22 Jan 2023 16:13:52 GMT fcc:server 2023-01-22T16:13:52.613Z 302 GET 5.323 ms - /signin
+Sun, 22 Jan 2023 16:14:03 GMT fcc:server 2023-01-22T16:14:03.379Z 302 GET 2.985 ms - /signin
+Sun, 22 Jan 2023 16:14:14 GMT fcc:boot:donate activeDonor count: 0
+Sun, 22 Jan 2023 16:14:15 GMT fcc:server 2023-01-22T16:14:15.707Z 302 GET 4.002 ms - /signin
+Sun, 22 Jan 2023 16:14:24 GMT fcc:server 2023-01-22T16:14:24.102Z 302 GET 1.974 ms - /signin
+Sun, 22 Jan 2023 16:14:35 GMT fcc:server 2023-01-22T16:14:35.889Z 302 GET 3.402 ms - /signin
+Sun, 22 Jan 2023 16:14:49 GMT fcc:server 2023-01-22T16:14:49.188Z 302 GET 1.923 ms - /signin
+Sun, 22 Jan 2023 16:15:22 GMT fcc:server 2023-01-22T16:15:22.704Z 302 GET 1.849 ms - /signin
+Sun, 22 Jan 2023 16:15:40 GMT fcc:server 2023-01-22T16:15:40.892Z 302 GET 3.255 ms - /signin
+Sun, 22 Jan 2023 16:15:51 GMT fcc:server 2023-01-22T16:15:51.426Z 302 GET 2.209 ms - /signin
+Sun, 22 Jan 2023 16:15:58 GMT fcc:server 2023-01-22T16:15:58.778Z 302 GET 3.133 ms - /signin
+Sun, 22 Jan 2023 16:16:18 GMT fcc:server 2023-01-22T16:16:18.551Z 302 GET 2.679 ms - /signin
+
+Error: undefined
+Is authenticated user: false
+Headers: {
+  "connection": "keep-alive",
+  "accept": "text/html,*/*",
+  "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/10.11.0 Chrome/106.0.5249.51 Electron/21.0.0 Safari/537.36",
+  "cookie": "connect.sid=s%3AJgVqzw_NKuFGZh9OMtr5iF-e9s8OgBUQ.2uU5WwWaVUU%2BBN0Sm%2BA1aXcCMfd9UjFmn8pOaOPjsZg",
+  "host": "localhost:3000"
+}
+Original request: undefined /signin
+Stack: undefined
+
+// raw
+"No user instance found"
+
+
+Unhandled error for request GET /signin: TypeError: res.redirectWithFlash is not a function
+    at /workspace/freeCodeCamp/api-server/src/server/middlewares/error-handlers.js:65:18
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at /workspace/freeCodeCamp/api-server/src/server/middlewares/csurf-error-handler.js:10:5
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+Error: Failed to deserialize user out of session
+    at pass (/workspace/freeCodeCamp/node_modules/passport/lib/authenticator.js:344:19)
+    at done (/workspace/freeCodeCamp/node_modules/passport/lib/authenticator.js:349:7)
+    at /workspace/freeCodeCamp/api-server/src/server/component-passport.js:38:12
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+Error: undefined
+Is authenticated user: false
+Headers: {
+  "connection": "keep-alive",
+  "accept": "text/html,*/*",
+  "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/10.11.0 Chrome/106.0.5249.51 Electron/21.0.0 Safari/537.36",
+  "cookie": "connect.sid=s%3AJgVqzw_NKuFGZh9OMtr5iF-e9s8OgBUQ.2uU5WwWaVUU%2BBN0Sm%2BA1aXcCMfd9UjFmn8pOaOPjsZg",
+  "host": "localhost:3000"
+}
+Original request: undefined /signin
+Stack: undefined
+
+// raw
+"No user instance found"
+
+
+Unhandled error for request GET /signin: TypeError: res.redirectWithFlash is not a function
+    at /workspace/freeCodeCamp/api-server/src/server/middlewares/error-handlers.js:65:18
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at /workspace/freeCodeCamp/api-server/src/server/middlewares/csurf-error-handler.js:10:5
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+Error: Failed to deserialize user out of session
+    at pass (/workspace/freeCodeCamp/node_modules/passport/lib/authenticator.js:344:19)
+    at done (/workspace/freeCodeCamp/node_modules/passport/lib/authenticator.js:349:7)
+    at /workspace/freeCodeCamp/api-server/src/server/component-passport.js:38:12
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+Error: undefined
+Is authenticated user: false
+Headers: {
+  "connection": "keep-alive",
+  "accept": "text/html,*/*",
+  "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/10.11.0 Chrome/106.0.5249.51 Electron/21.0.0 Safari/537.36",
+  "cookie": "connect.sid=s%3AJgVqzw_NKuFGZh9OMtr5iF-e9s8OgBUQ.2uU5WwWaVUU%2BBN0Sm%2BA1aXcCMfd9UjFmn8pOaOPjsZg",
+  "host": "localhost:3000"
+}
+Original request: undefined /signin
+Stack: undefined
+
+// raw
+"No user instance found"
+
+
+Unhandled error for request GET /signin: TypeError: res.redirectWithFlash is not a function
+    at /workspace/freeCodeCamp/api-server/src/server/middlewares/error-handlers.js:65:18
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at /workspace/freeCodeCamp/api-server/src/server/middlewares/csurf-error-handler.js:10:5
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+Error: Failed to deserialize user out of session
+    at pass (/workspace/freeCodeCamp/node_modules/passport/lib/authenticator.js:344:19)
+    at done (/workspace/freeCodeCamp/node_modules/passport/lib/authenticator.js:349:7)
+    at /workspace/freeCodeCamp/api-server/src/server/component-passport.js:38:12
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+Error: undefined
+Is authenticated user: false
+Headers: {
+  "connection": "keep-alive",
+  "accept": "text/html,*/*",
+  "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/10.11.0 Chrome/106.0.5249.51 Electron/21.0.0 Safari/537.36",
+  "cookie": "connect.sid=s%3AJgVqzw_NKuFGZh9OMtr5iF-e9s8OgBUQ.2uU5WwWaVUU%2BBN0Sm%2BA1aXcCMfd9UjFmn8pOaOPjsZg",
+  "host": "localhost:3000"
+}
+Original request: undefined /signin
+Stack: undefined
+
+// raw
+"No user instance found"
+
+
+Unhandled error for request GET /signin: TypeError: res.redirectWithFlash is not a function
+    at /workspace/freeCodeCamp/api-server/src/server/middlewares/error-handlers.js:65:18
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at /workspace/freeCodeCamp/api-server/src/server/middlewares/csurf-error-handler.js:10:5
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+Error: Failed to deserialize user out of session
+    at pass (/workspace/freeCodeCamp/node_modules/passport/lib/authenticator.js:344:19)
+    at done (/workspace/freeCodeCamp/node_modules/passport/lib/authenticator.js:349:7)
+    at /workspace/freeCodeCamp/api-server/src/server/component-passport.js:38:12
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+Error: undefined
+Is authenticated user: false
+Headers: {
+  "connection": "keep-alive",
+  "accept": "text/html,*/*",
+  "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/10.11.0 Chrome/106.0.5249.51 Electron/21.0.0 Safari/537.36",
+  "cookie": "connect.sid=s%3AJgVqzw_NKuFGZh9OMtr5iF-e9s8OgBUQ.2uU5WwWaVUU%2BBN0Sm%2BA1aXcCMfd9UjFmn8pOaOPjsZg",
+  "host": "localhost:3000"
+}
+Original request: undefined /signin
+Stack: undefined
+
+// raw
+"No user instance found"
+
+
+Unhandled error for request GET /signin: TypeError: res.redirectWithFlash is not a function
+    at /workspace/freeCodeCamp/api-server/src/server/middlewares/error-handlers.js:65:18
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at /workspace/freeCodeCamp/api-server/src/server/middlewares/csurf-error-handler.js:10:5
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:346:12)
+    at next (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle_error (/workspace/freeCodeCamp/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/workspace/freeCodeCamp/node_modules/express/lib/router/index.js:326:13)
+    at /workspace/freeCodeCamp/node_modules/express/lib/router/index.js:286:9
+Error: Failed to deserialize user out of session
+    at pass (/workspace/freeCodeCamp/node_modules/passport/lib/authenticator.js:344:19)
+    at done (/workspace/freeCodeCamp/node_modules/passport/lib/authenticator.js:349:7)
+    at /workspace/freeCodeCamp/api-server/src/server/component-passport.js:38:12
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Sun, 22 Jan 2023 16:17:17 GMT fcc:server 2023-01-22T16:17:17.396Z 302 GET 3.268 ms - /signin
+Sun, 22 Jan 2023 16:17:18 GMT fcc:server 2023-01-22T16:17:18.576Z 302 GET 2.415 ms - /signin
+Sun, 22 Jan 2023 16:17:20 GMT fcc:server 2023-01-22T16:17:20.235Z 302 GET 2.021 ms - /signin
+Sun, 22 Jan 2023 16:17:21 GMT fcc:server 2023-01-22T16:17:21.673Z 302 GET 2.229 ms - /signin
+Sun, 22 Jan 2023 16:17:22 GMT fcc:server 2023-01-22T16:17:22.941Z 302 GET 3.692 ms - /signin
+Sun, 22 Jan 2023 16:19:14 GMT fcc:boot:donate activeDonor count: 0
+Sun, 22 Jan 2023 16:22:45 GMT fcc:server Shutting down server
+Sun, 22 Jan 2023 16:22:45 GMT fcc:server closing db connection
+Sun, 22 Jan 2023 16:22:45 GMT fcc:server Server is closed
+Sun, 22 Jan 2023 16:22:45 GMT fcc:server DB connection closed

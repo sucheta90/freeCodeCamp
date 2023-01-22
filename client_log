@@ -1,0 +1,8 @@
+success onPreExtractQueries - 0.002s
+success extract queries from components -
+0.527s
+success write out requires - 0.104s
+success run page queries - 0.020s - 1/1
+49.98/s
+success Writing page-data.json files to
+public directory - 0.372s - 1/2791 7501.20/s

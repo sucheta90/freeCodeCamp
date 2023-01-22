@@ -1,0 +1,850 @@
+
+> @freecodecamp/freecodecamp@0.0.1 cypress:dev:run
+> npm run cypress -- run --spec cypress/e2e/default/**/*.js
+
+
+> @freecodecamp/freecodecamp@0.0.1 precypress
+> node ./cypress-install.js
+
+Installing Cypress 10.11.0
+Cypress installed
+
+> @freecodecamp/freecodecamp@0.0.1 cypress
+> cypress run --spec cypress/e2e/default/learn/challenge-hot-keys.js cypress/e2e/default/settings/certifications.js cypress/e2e/default/settings/email-change.js cypress/e2e/default/settings/image-picture-check.js cypress/e2e/default/settings/settings.js cypress/e2e/default/settings/user-token.js cypress/e2e/default/settings/username-change.js cypress/e2e/default/user/certifications.js cypress/e2e/default/user/privacy-terms.js cypress/e2e/default/user/report-user.js
+
+
+⚠ Warning: It looks like you're passing --spec a space-separated list of arguments:
+
+"cypress/e2e/default/learn/challenge-hot-keys.js cypress/e2e/default/settings/certifications.js cypress/e2e/default/settings/email-change.js cypress/e2e/default/settings/image-picture-check.js cypress/e2e/default/settings/settings.js cypress/e2e/default/settings/user-token.js cypress/e2e/default/settings/username-change.js cypress/e2e/default/user/certifications.js cypress/e2e/default/user/privacy-terms.js cypress/e2e/default/user/report-user.js"
+
+This will work, but it's not recommended.
+
+If you are trying to pass multiple arguments, separate them with commas instead:
+  cypress run --spec arg1,arg2,arg3
+  
+The most common cause of this warning is using an unescaped glob pattern. If you are
+trying to pass a glob pattern, escape it using quotes:
+  cypress run --spec "**/*.spec.js"
+
+[43953:0122/160628.716509:ERROR:gpu_memory_buffer_support_x11.cc(44)] dri3 extension not supported.
+Missing baseUrl in compilerOptions. tsconfig-paths will be skipped
+
+================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        10.11.0                                                                        │
+  │ Browser:        Electron 106 (headless)                                                        │
+  │ Node Version:   v16.19.0 (/home/gitpod/.nvm/versions/node/v16.19.0/bin/node)                   │
+  │ Specs:          10 found (learn/challenge-hot-keys.js, settings/certifications.js, settings/em │
+  │                 ail-change.js, settings/image-picture-check.js, settings/settings.js, settings │
+  │                 /user-token.js, settings/username-change.js, user/certifications.js, user/priv │
+  │                 acy-terms.js, user/repo...)                                                    │
+  │ Searched:       cypress/e2e/default/learn/challenge-hot-keys.js, cypress/e2e/default/settings/ │
+  │                 certifications.js, cypress/e2e/default/settings/email-change.js, cypress/e2e/d │
+  │                 efault/settings/image-picture-check.js, cypress/e2e/default/settings/settings. │
+  │                 js, cypress/e2e/default/settings/user-token.js, cypress/e2e/default/settings/u │
+  │                 sername-change.js, cypress/e2e/default/user/certifications.js, cypress/e2e/def │
+  │                 ault/user/privacy-terms.js, cypress/e2e/default/user/report-user.js            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  learn/challenge-hot-keys.js                                                    (1 of 10)
+
+
+  The hotkeys should work correctly
+    (Attempt 1 of 5) should be possible to navigate to the next challenge/projects and previous
+    (Attempt 2 of 5) should be possible to navigate to the next challenge/projects and previous
+    (Attempt 3 of 5) should be possible to navigate to the next challenge/projects and previous
+    (Attempt 4 of 5) should be possible to navigate to the next challenge/projects and previous
+    1) "before each" hook for "should be possible to navigate to the next challenge/projects and previous"
+
+
+  0 passing (1m)
+  1 failing
+
+  1) The hotkeys should work correctly
+       "before each" hook for "should be possible to navigate to the next challenge/projects and previous":
+     AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Welcome back' but never did.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `The hotkeys should work cor...`
+      at Context.login (webpack:///./cypress/support/commands.ts:4:5)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        7                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      6                                                                                │
+  │ Screenshots:  5                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     1 minute, 3 seconds                                                              │
+  │ Spec Ran:     learn/challenge-hot-keys.js                                                      │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /workspace/freeCodeCamp/cypress/screenshots/learn/challenge-hot-keys.js/The hotk     (1280x720)
+     eys should work correctly -- should be possible to navigate to the next challeng               
+     eprojects and previous (failed).png                                                            
+  -  /workspace/freeCodeCamp/cypress/screenshots/learn/challenge-hot-keys.js/The hotk     (1280x720)
+     eys should work correctly -- should be possible to navigate to the next challeng               
+     eprojects and previous (failed) (attempt 2).png                                                
+  -  /workspace/freeCodeCamp/cypress/screenshots/learn/challenge-hot-keys.js/The hotk     (1280x720)
+     eys should work correctly -- should be possible to navigate to the next challeng               
+     eprojects and previous (failed) (attempt 3).png                                                
+  -  /workspace/freeCodeCamp/cypress/screenshots/learn/challenge-hot-keys.js/The hotk     (1280x720)
+     eys should work correctly -- should be possible to navigate to the next challeng               
+     eprojects and previous (failed) (attempt 4).png                                                
+  -  /workspace/freeCodeCamp/cypress/screenshots/learn/challenge-hot-keys.js/The hotk     (1280x720)
+     eys should work correctly -- should be possible to navigate to the next challeng               
+     eprojects and previous -- before each hook (failed) (attempt 5).png                            
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+  -  Finished processing: /workspace/freeCodeCamp/cypress/videos/learn/challenge-hot-   (16 seconds)
+                          keys.js.mp4                                                               
+
+    Compression progress:  100%
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  settings/certifications.js                                                     (2 of 10)
+
+
+  Settings certifications area
+    initially
+      1) "before all" hook for "Should render the default settings page"
+    after isHonest
+      2) "before all" hook for "Should update the user as they try to claim their certifications"
+
+
+  0 passing (31s)
+  2 failing
+
+  1) Settings certifications area
+       initially
+         "before all" hook for "Should render the default settings page":
+     AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Welcome back' but never did.
+
+Because this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `initially`
+
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail
+      at Context.login (webpack:///./cypress/support/commands.ts:4:5)
+
+  2) Settings certifications area
+       after isHonest
+         "before all" hook for "Should update the user as they try to claim their certifications":
+     AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Welcome back' but never did.
+
+Because this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `after isHonest`
+
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail
+      at Context.login (webpack:///./cypress/support/commands.ts:4:5)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      2                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  2                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     30 seconds                                                                       │
+  │ Spec Ran:     settings/certifications.js                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/certifications.js/Settings      (1280x720)
+     certifications area -- initially -- Should render the default settings page -- b               
+     efore all hook (failed).png                                                                    
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/certifications.js/Settings      (1280x720)
+     certifications area -- after isHonest -- Should update the user as they try to c               
+     laim their certifications -- before all hook (failed).png                                      
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+  -  Finished processing: /workspace/freeCodeCamp/cypress/videos/settings/certificati    (4 seconds)
+                          ons.js.mp4                                                                
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  settings/email-change.js                                                       (3 of 10)
+
+
+  Email input field
+    (Attempt 1 of 5) Should be possible to submit the new email
+    (Attempt 2 of 5) Should be possible to submit the new email
+    (Attempt 3 of 5) Should be possible to submit the new email
+    (Attempt 4 of 5) Should be possible to submit the new email
+    1) "before each" hook for "Should be possible to submit the new email"
+
+
+  0 passing (2m)
+  1 failing
+
+  1) Email input field
+       "before each" hook for "Should be possible to submit the new email":
+     AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Welcome back' but never did.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Email input field`
+      at Context.login (webpack:///./cypress/support/commands.ts:4:5)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        3                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      2                                                                                │
+  │ Screenshots:  5                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     1 minute, 30 seconds                                                             │
+  │ Spec Ran:     settings/email-change.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/email-change.js/Email input     (1280x720)
+      field -- Should be possible to submit the new email (failed).png                              
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/email-change.js/Email input     (1280x720)
+      field -- Should be possible to submit the new email (failed) (attempt 2).png                  
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/email-change.js/Email input     (1280x720)
+      field -- Should be possible to submit the new email (failed) (attempt 3).png                  
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/email-change.js/Email input     (1280x720)
+      field -- Should be possible to submit the new email (failed) (attempt 4).png                  
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/email-change.js/Email input     (1280x720)
+      field -- Should be possible to submit the new email -- before each hook (failed               
+     ) (attempt 5).png                                                                              
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+  -  Finished processing: /workspace/freeCodeCamp/cypress/videos/settings/email-chang   (26 seconds)
+                          e.js.mp4                                                                  
+
+    Compression progress:  100%
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  settings/image-picture-check.js                                                (4 of 10)
+
+
+  Picture input field
+    (Attempt 1 of 5) Should be possible to type
+    (Attempt 2 of 5) Should be possible to type
+    (Attempt 3 of 5) Should be possible to type
+    (Attempt 4 of 5) Should be possible to type
+    1) "before each" hook for "Should be possible to type"
+
+
+  0 passing (1m)
+  1 failing
+
+  1) Picture input field
+       "before each" hook for "Should be possible to type":
+     AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Welcome back' but never did.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Picture input field`
+      at Context.login (webpack:///./cypress/support/commands.ts:4:5)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        3                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      2                                                                                │
+  │ Screenshots:  5                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     1 minute, 21 seconds                                                             │
+  │ Spec Ran:     settings/image-picture-check.js                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/image-picture-check.js/Pict     (1280x720)
+     ure input field -- Should be possible to type (failed).png                                     
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/image-picture-check.js/Pict     (1280x720)
+     ure input field -- Should be possible to type (failed) (attempt 2).png                         
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/image-picture-check.js/Pict     (1280x720)
+     ure input field -- Should be possible to type (failed) (attempt 3).png                         
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/image-picture-check.js/Pict     (1280x720)
+     ure input field -- Should be possible to type (failed) (attempt 4).png                         
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/image-picture-check.js/Pict     (1280x720)
+     ure input field -- Should be possible to type -- before each hook (failed) (atte               
+     mpt 5).png                                                                                     
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+  -  Finished processing: /workspace/freeCodeCamp/cypress/videos/settings/image-pictu   (22 seconds)
+                          re-check.js.mp4                                                           
+
+    Compression progress:  100%
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  settings/settings.js                                                           (5 of 10)
+
+
+  Settings
+    1) "before all" hook for "should be possible to reset your progress"
+
+
+  0 passing (12s)
+  1 failing
+
+  1) Settings
+       "before all" hook for "should be possible to reset your progress":
+     AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Welcome back' but never did.
+
+Because this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Settings`
+
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail
+      at Context.login (webpack:///./cypress/support/commands.ts:4:5)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     11 seconds                                                                       │
+  │ Spec Ran:     settings/settings.js                                                             │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/settings.js/Settings -- sho     (1280x720)
+     uld be possible to reset your progress -- before all hook (failed).png                         
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+  -  Finished processing: /workspace/freeCodeCamp/cypress/videos/settings/settings.js    (3 seconds)
+                          .mp4                                                                      
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  settings/user-token.js                                                         (6 of 10)
+
+
+  User token widget on settings page,
+    initially
+      (Attempt 1 of 5) should not render
+      (Attempt 2 of 5) should not render
+      (Attempt 3 of 5) should not render
+      (Attempt 4 of 5) should not render
+      1) "before each" hook for "should not render"
+    after creating token
+      (Attempt 1 of 5) should allow you to delete your token
+      (Attempt 2 of 5) should allow you to delete your token
+      (Attempt 3 of 5) should allow you to delete your token
+      (Attempt 4 of 5) should allow you to delete your token
+      2) "before each" hook for "should allow you to delete your token"
+
+
+  0 passing (2m)
+  2 failing
+
+  1) User token widget on settings page,
+       initially
+         "before each" hook for "should not render":
+     AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Welcome back' but never did.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `initially`
+      at Context.login (webpack:///./cypress/support/commands.ts:4:5)
+
+  2) User token widget on settings page,
+       after creating token
+         "before each" hook for "should allow you to delete your token":
+     AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Welcome back' but never did.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `after creating token`
+      at Context.login (webpack:///./cypress/support/commands.ts:4:5)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      2                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  10                                                                               │
+  │ Video:        true                                                                             │
+  │ Duration:     2 minutes, 7 seconds                                                             │
+  │ Spec Ran:     settings/user-token.js                                                           │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/user-token.js/User token wi     (1280x720)
+     dget on settings page, -- initially -- should not render (failed).png                          
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/user-token.js/User token wi     (1280x720)
+     dget on settings page, -- initially -- should not render (failed) (attempt 2).pn               
+     g                                                                                              
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/user-token.js/User token wi     (1280x720)
+     dget on settings page, -- initially -- should not render (failed) (attempt 3).pn               
+     g                                                                                              
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/user-token.js/User token wi     (1280x720)
+     dget on settings page, -- initially -- should not render (failed) (attempt 4).pn               
+     g                                                                                              
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/user-token.js/User token wi     (1280x720)
+     dget on settings page, -- initially -- should not render -- before each hook (fa               
+     iled) (attempt 5).png                                                                          
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/user-token.js/User token wi     (1280x720)
+     dget on settings page, -- after creating token -- should allow you to delete you               
+     r token (failed).png                                                                           
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/user-token.js/User token wi     (1280x720)
+     dget on settings page, -- after creating token -- should allow you to delete you               
+     r token (failed) (attempt 2).png                                                               
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/user-token.js/User token wi     (1280x720)
+     dget on settings page, -- after creating token -- should allow you to delete you               
+     r token (failed) (attempt 3).png                                                               
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/user-token.js/User token wi     (1280x720)
+     dget on settings page, -- after creating token -- should allow you to delete you               
+     r token (failed) (attempt 4).png                                                               
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/user-token.js/User token wi     (1280x720)
+     dget on settings page, -- after creating token -- should allow you to delete you               
+     r token -- before each hook (failed) (attempt 5).png                                           
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+    Compression progress:  38%
+    Compression progress:  86%
+  -  Finished processing: /workspace/freeCodeCamp/cypress/videos/settings/user-token.   (23 seconds)
+                          js.mp4                                                                    
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  settings/username-change.js                                                    (7 of 10)
+
+
+  Username input field
+    (Attempt 1 of 5) Should be possible to type
+    (Attempt 2 of 5) Should be possible to type
+    (Attempt 3 of 5) Should be possible to type
+    (Attempt 4 of 5) Should be possible to type
+    1) "before each" hook for "Should be possible to type"
+
+
+  0 passing (1m)
+  1 failing
+
+  1) Username input field
+       "before each" hook for "Should be possible to type":
+     AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Welcome back' but never did.
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Username input field`
+      at Context.login (webpack:///./cypress/support/commands.ts:4:5)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        16                                                                               │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      15                                                                               │
+  │ Screenshots:  5                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     1 minute, 9 seconds                                                              │
+  │ Spec Ran:     settings/username-change.js                                                      │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/username-change.js/Username     (1280x720)
+      input field -- Should be possible to type (failed).png                                        
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/username-change.js/Username     (1280x720)
+      input field -- Should be possible to type (failed) (attempt 2).png                            
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/username-change.js/Username     (1280x720)
+      input field -- Should be possible to type (failed) (attempt 3).png                            
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/username-change.js/Username     (1280x720)
+      input field -- Should be possible to type (failed) (attempt 4).png                            
+  -  /workspace/freeCodeCamp/cypress/screenshots/settings/username-change.js/Username     (1280x720)
+      input field -- Should be possible to type -- before each hook (failed) (attempt               
+      5).png                                                                                        
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+  -  Finished processing: /workspace/freeCodeCamp/cypress/videos/settings/username-ch    (8 seconds)
+                          ange.js.mp4                                                               
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  user/certifications.js                                                         (8 of 10)
+
+
+  Public profile certifications
+    Signed in user viewing their own public profile
+      (Attempt 1 of 5) Should show claimed certifications if the username has all lowercase characters
+      (Attempt 2 of 5) Should show claimed certifications if the username has all lowercase characters
+      (Attempt 3 of 5) Should show claimed certifications if the username has all lowercase characters
+      (Attempt 4 of 5) Should show claimed certifications if the username has all lowercase characters
+      1) "before each" hook for "Should show claimed certifications if the username has all lowercase characters"
+
+
+  0 passing (4s)
+  1 failing
+
+  1) Public profile certifications
+       Signed in user viewing their own public profile
+         "before each" hook for "Should show claimed certifications if the username has all lowercase characters":
+     CypressError: `cy.visit()` failed trying to load:
+
+http://localhost:3000/signin
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  > Error: aborted
+
+Common situations why this would fail:
+  - you don't have internet access
+  - you forgot to run / boot your web server
+  - your web server isn't accessible
+  - you have weird network configuration settings on your computer
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Signed in user viewing thei...`
+      at <unknown> (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:142341:82)
+      at visitFailedByErr (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:141629:12)
+      at <unknown> (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:142340:11)
+      at tryCatcher (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:11318:23)
+      at Promise._settlePromiseFromHandler (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:9253:31)
+      at Promise._settlePromise (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:9310:18)
+      at Promise._settlePromise0 (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:9355:10)
+      at Promise._settlePromises (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:9431:18)
+      at _drainQueueStep (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:6025:12)
+      at _drainQueue (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:6018:9)
+      at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:6034:5)
+      at Async.drainQueues (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:5904:14)
+  From Your Spec Code:
+      at Context.login (webpack:///./cypress/support/commands.ts:3:5)
+  
+  From Node.js Internals:
+    Error: aborted
+        at connResetException (node:internal/errors:692:14)
+        at Socket.socketCloseListener (node:_http_client:414:19)
+        at Socket.emit (node:events:539:35)
+        at Socket.emit (node:domain:475:12)
+        at TCP.<anonymous> (node:net:709:12)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      1                                                                                │
+  │ Screenshots:  5                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     user/certifications.js                                                           │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /workspace/freeCodeCamp/cypress/screenshots/user/certifications.js/Public profil     (1280x720)
+     e certifications -- Signed in user viewing their own public profile -- Should sh               
+     ow claimed certifications if the username has all lowercase characters (failed).               
+     png                                                                                            
+  -  /workspace/freeCodeCamp/cypress/screenshots/user/certifications.js/Public profil     (1280x720)
+     e certifications -- Signed in user viewing their own public profile -- Should sh               
+     ow claimed certifications if the username has all lowercase characters (failed)                
+     (attempt 2).png                                                                                
+  -  /workspace/freeCodeCamp/cypress/screenshots/user/certifications.js/Public profil     (1280x720)
+     e certifications -- Signed in user viewing their own public profile -- Should sh               
+     ow claimed certifications if the username has all lowercase characters (failed)                
+     (attempt 3).png                                                                                
+  -  /workspace/freeCodeCamp/cypress/screenshots/user/certifications.js/Public profil     (1280x720)
+     e certifications -- Signed in user viewing their own public profile -- Should sh               
+     ow claimed certifications if the username has all lowercase characters (failed)                
+     (attempt 4).png                                                                                
+  -  /workspace/freeCodeCamp/cypress/screenshots/user/certifications.js/Public profil     (1280x720)
+     e certifications -- Signed in user viewing their own public profile -- Should sh               
+     ow claimed certifications if the username has all lowercase characters -- before               
+      each hook (failed) (attempt 5).png                                                            
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+  -  Finished processing: /workspace/freeCodeCamp/cypress/videos/user/certifications.    (2 seconds)
+                          js.mp4                                                                    
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  user/privacy-terms.js                                                          (9 of 10)
+
+
+  Privacy terms
+    (Attempt 1 of 5) should not redirect away from email sign up page on login
+    (Attempt 2 of 5) should not redirect away from email sign up page on login
+    (Attempt 3 of 5) should not redirect away from email sign up page on login
+    (Attempt 4 of 5) should not redirect away from email sign up page on login
+    1) should not redirect away from email sign up page on login
+
+
+  0 passing (16s)
+  1 failing
+
+  1) Privacy terms
+       should not redirect away from email sign up page on login:
+     CypressError: `cy.visit()` failed trying to load:
+
+https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/
+
+The response we received from your web server was:
+
+  > 404: Not Found
+
+This was considered a failure because the status code was not `2xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+      at <unknown> (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:142324:84)
+      at visitFailedByErr (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:141629:12)
+      at <unknown> (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:142304:13)
+      at tryCatcher (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:11318:23)
+      at Promise._settlePromiseFromHandler (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:9253:31)
+      at Promise._settlePromise (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:9310:18)
+      at Promise._settlePromise0 (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:9355:10)
+      at Promise._settlePromises (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:9431:18)
+      at _drainQueueStep (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:6025:12)
+      at _drainQueue (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:6018:9)
+      at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:6034:5)
+      at Async.drainQueues (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:5904:14)
+  From Your Spec Code:
+      at Context.eval (webpack:///./cypress/e2e/default/user/privacy-terms.js:14:7)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  5                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     15 seconds                                                                       │
+  │ Spec Ran:     user/privacy-terms.js                                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /workspace/freeCodeCamp/cypress/screenshots/user/privacy-terms.js/Privacy terms      (1280x720)
+     -- should not redirect away from email sign up page on login (failed).png                      
+  -  /workspace/freeCodeCamp/cypress/screenshots/user/privacy-terms.js/Privacy terms      (1280x720)
+     -- should not redirect away from email sign up page on login (failed) (attempt 2               
+     ).png                                                                                          
+  -  /workspace/freeCodeCamp/cypress/screenshots/user/privacy-terms.js/Privacy terms      (1280x720)
+     -- should not redirect away from email sign up page on login (failed) (attempt 3               
+     ).png                                                                                          
+  -  /workspace/freeCodeCamp/cypress/screenshots/user/privacy-terms.js/Privacy terms      (1280x720)
+     -- should not redirect away from email sign up page on login (failed) (attempt 4               
+     ).png                                                                                          
+  -  /workspace/freeCodeCamp/cypress/screenshots/user/privacy-terms.js/Privacy terms      (1280x720)
+     -- should not redirect away from email sign up page on login (failed) (attempt 5               
+     ).png                                                                                          
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+  -  Finished processing: /workspace/freeCodeCamp/cypress/videos/user/privacy-terms.j    (2 seconds)
+                          s.mp4                                                                     
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  user/report-user.js                                                           (10 of 10)
+
+
+  Report User
+    (Attempt 1 of 5) should be possible to report a user from their profile page
+    (Attempt 2 of 5) should be possible to report a user from their profile page
+    (Attempt 3 of 5) should be possible to report a user from their profile page
+    (Attempt 4 of 5) should be possible to report a user from their profile page
+    1) "before each" hook for "should be possible to report a user from their profile page"
+
+
+  0 passing (7s)
+  1 failing
+
+  1) Report User
+       "before each" hook for "should be possible to report a user from their profile page":
+     CypressError: `cy.visit()` failed trying to load:
+
+http://localhost:3000/signin
+
+The response we received from your web server was:
+
+  > 404: Not Found
+
+This was considered a failure because the status code was not `2xx`.
+
+This http request was redirected '1' time to:
+
+  - 302: https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/learn
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Report User`
+      at <unknown> (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:142324:84)
+      at visitFailedByErr (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:141629:12)
+      at <unknown> (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:142304:13)
+      at tryCatcher (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:11318:23)
+      at Promise._settlePromiseFromHandler (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:9253:31)
+      at Promise._settlePromise (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:9310:18)
+      at Promise._settlePromise0 (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:9355:10)
+      at Promise._settlePromises (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:9431:18)
+      at _drainQueueStep (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:6025:12)
+      at _drainQueue (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:6018:9)
+      at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:6034:5)
+      at Async.drainQueues (https://8000-sucheta90-freecodecamp-172k3z4vuss.ws-us83.gitpod.io/__cypress/runner/cypress_runner.js:5904:14)
+  From Your Spec Code:
+      at Context.login (webpack:///./cypress/support/commands.ts:3:5)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  5                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     user/report-user.js                                                              │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /workspace/freeCodeCamp/cypress/screenshots/user/report-user.js/Report User -- s     (1280x720)
+     hould be possible to report a user from their profile page (failed).png                        
+  -  /workspace/freeCodeCamp/cypress/screenshots/user/report-user.js/Report User -- s     (1280x720)
+     hould be possible to report a user from their profile page (failed) (attempt 2).               
+     png                                                                                            
+  -  /workspace/freeCodeCamp/cypress/screenshots/user/report-user.js/Report User -- s     (1280x720)
+     hould be possible to report a user from their profile page (failed) (attempt 3).               
+     png                                                                                            
+  -  /workspace/freeCodeCamp/cypress/screenshots/user/report-user.js/Report User -- s     (1280x720)
+     hould be possible to report a user from their profile page (failed) (attempt 4).               
+     png                                                                                            
+  -  /workspace/freeCodeCamp/cypress/screenshots/user/report-user.js/Report User -- s     (1280x720)
+     hould be possible to report a user from their profile page -- before each hook (               
+     failed) (attempt 5).png                                                                        
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+  -  Finished processing: /workspace/freeCodeCamp/cypress/videos/user/report-user.js.     (1 second)
+                          mp4                                                                       
+
+
+================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✖  learn/challenge-hot-keys.js              01:03        7        -        1        -        6 │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✖  settings/certifications.js               00:30        2        -        2        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✖  settings/email-change.js                 01:30        3        -        1        -        2 │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✖  settings/image-picture-check.js          01:21        3        -        1        -        2 │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✖  settings/settings.js                     00:11        1        -        1        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✖  settings/user-token.js                   02:07        2        -        2        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✖  settings/username-change.js              01:09       16        -        1        -       15 │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✖  user/certifications.js                   00:04        2        -        1        -        1 │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✖  user/privacy-terms.js                    00:15        1        -        1        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✖  user/report-user.js                      00:06        1        -        1        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✖  10 of 10 failed (100%)                   08:21       38        -       12        -       26  
+
